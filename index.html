@@ -93,7 +93,12 @@
     </form>
     <div id="comments">
     </div>
+      window.postComment = function() {
+  var div = document.getElementById("comments");
 
+  div.innerHTML = div.innerHTML + "<br>" + document.getElementById("comment").value;
+
+}
         <!-- Single Comment -->
         <div class="media mb-4">
           <img class="d-flex mr-3 rounded-circle" src="" alt="">
