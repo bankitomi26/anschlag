@@ -87,18 +87,18 @@
 
        
         <!-- Comments Form -->
-       <form>
-    <textarea id="comment" placeholder="Say something..." /></textarea><br>
-    <a href="#" onclick="postComment();">Submit!</a>
-    </form>
-    <div id="comments">
-    </div>
-      window.postComment = function() {
-  var div = document.getElementById("comments");
+        <div class="card my-4">
+          <h5 class="card-header">Leave a Comment:</h5>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
 
-  div.innerHTML = div.innerHTML + "<br>" + document.getElementById("comment").value;
-
-}
         <!-- Single Comment -->
         <div class="media mb-4">
           <img class="d-flex mr-3 rounded-circle" src="" alt="">
